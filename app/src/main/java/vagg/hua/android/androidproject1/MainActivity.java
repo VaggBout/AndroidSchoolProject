@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(MainActivity.this, SearchActivity.class);
                     intent.putExtra("fname", sFnameSearch);
                     startActivity(intent);
+                    fnameSearch.getText().clear();
                 }
             }
         });
