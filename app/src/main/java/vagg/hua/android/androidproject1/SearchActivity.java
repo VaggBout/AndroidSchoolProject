@@ -35,17 +35,17 @@ public class SearchActivity extends AppCompatActivity {
 
             TextView fnameTitle = new TextView(SearchActivity.this);
             fnameTitle.setText("First Name:");
-            fnameTitle.setPadding(5, 5, 30, 5);
+            fnameTitle.setPadding(1, 1, 30, 5);
             tableHead.addView(fnameTitle);
 
             TextView lnameTitle = new TextView(SearchActivity.this);
             lnameTitle.setText("Last Name:");
-            lnameTitle.setPadding(5, 5, 30, 5);
+            lnameTitle.setPadding(1, 1, 30, 5);
             tableHead.addView(lnameTitle);
 
             TextView ageTitle = new TextView(SearchActivity.this);
             ageTitle.setText("Age:");
-            ageTitle.setPadding(5, 5, 30, 5);
+            ageTitle.setPadding(1, 1, 30, 5);
             tableHead.addView(ageTitle);
 
             tableLayout.addView(tableHead, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
@@ -57,17 +57,17 @@ public class SearchActivity extends AppCompatActivity {
 
                 TextView fname = new TextView(SearchActivity.this);
                 fname.setText(cursor.getString(cursor.getColumnIndex(dbHelper.KEY_FNAME)));
-                fname.setPadding(5, 5, 30, 5);
+                fname.setPadding(1, 1, 30, 5);
                 tableRow.addView(fname);
 
                 TextView lname = new TextView(SearchActivity.this);
                 lname.setText(cursor.getString(cursor.getColumnIndex(dbHelper.KEY_LNAME)));
-                lname.setPadding(5, 5, 30, 5);
+                lname.setPadding(1, 1, 30, 5);
                 tableRow.addView(lname);
 
                 TextView age = new TextView(SearchActivity.this);
                 age.setText(cursor.getString(cursor.getColumnIndex(dbHelper.KEY_AGE)));
-                age.setPadding(5, 5, 30, 5);
+                age.setPadding(1, 1, 30, 5);
                 tableRow.addView(age);
 
                 tableLayout.addView(tableRow, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
